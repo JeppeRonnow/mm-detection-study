@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['blue', 'brown', 'green', 'orange', 'red', 'yellow']
+
+roboflow:
+  workspace: mm-jcrbn
+  project: mm-detection-ueltc
+  version: 4
+  license: MIT
+  url: https://universe.roboflow.com/mm-jcrbn/mm-detection-ueltc/dataset/4
