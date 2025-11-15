@@ -37,6 +37,11 @@ if __name__ == '__main__':
         class_id = int(box.cls[0])
         class_name = results[0].names[class_id]
         color = colors.get(class_name, (255, 255, 255))
+
+        # draw dot at center
+        center_x = (x1 + x2) // 2
+        center_y = (y1 + y2) // 2
+        cv2.circle(img, (center_x, center_y), 2, (0, 0, 0), -1)
         
         cv2.rectangle(img, (x1, y1), (x2, y2), color, 1)
         
